@@ -15,7 +15,7 @@ Dataframe 2: Subcategory - Also using the crowdfunding.xlsx, we extracted the **
 
 Dataframe 3: Campaign - This is the final DataFrame to be created from the crowdfunding.xlsx and extracted all of the original columns from the Excel file. We transformed this data by renaming columns, changing datatypes, and converting the UTC times to datetime format. We also merged this dataframe with the category_df and the subcategory_df to extract the category and subcategory id numbers for each project.
 
-Dataframe 4: Contacts - This DataFrame extracted data from the contact.xlsx file. However, it required considerable transformation because all data was loaded into one column. We used Pandas to iterate through each row to extract keys and values for the columns and rows. Our new DataFrame went from a single contacts column to four: contact_id, last_name, first_name, email.
+Dataframe 4: Contacts - This DataFrame extracted data from the contacts.xlsx file. However, it required considerable transformation because all data was loaded into one column. We used Pandas to iterate through each row to extract keys and values for the columns and rows. Our new DataFrame went from a single contacts column to four: **contact_id, last_name, first_name, email**.
 
 Each dataframe was exported as a CSV file.
  
@@ -24,4 +24,4 @@ Each dataframe was exported as a CSV file.
 Using our four CSV files, we sketched an ERD of the tables using QuickDBD:
 ![QuickDBD sketch of an ERD of the tables](data_modeling_quickdbd_v2.png)
 
-From that ERD, we created a table schema for each CSV file and saved it as a Postgres file which we then uploaded into a new database called crowdfunding_db. We then uploaded the CSV files into their corresponding SQL tables. 
+From that ERD, we created a table schema for each CSV file and saved it as a Postgres file which we then uploaded into a new database called **crowdfunding_db**. We then uploaded the CSV files into their corresponding SQL tables. 
