@@ -30,4 +30,4 @@ category VARCHAR
 subcategory
 ---
 subcategory_id VARCHAR PK FK - campaign.subcategory_id
-subcategor_id VARHCAR
+subcategory VARCHAR
